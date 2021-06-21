@@ -18,20 +18,10 @@ const app = new Vue ({
     },
 
     methods : {
-        // eventoInatteso(){
-        //     this.colore = "blue";
-        //     this.img = "https://picsum.photos/600/315";
-        // }
-
         eventoInatteso(){
-            this.colore = "blue";
-
-            this.img == "https://picsum.photos/600/315" ? this.img = "https://www.sinonimi-contrari.it/includes/images/sharers/sinonimi-di-qualsiasi.png" : (this.img == "https://www.sinonimi-contrari.it/includes/images/sharers/sinonimi-di-qualsiasi.png" ? this.img = "https://picsum.photos/600/315" : this.img = "https://picsum.photos/600/315");
-
-            
-
+             this.colore = "blue";
+             this.img = "https://picsum.photos/600/315";
         }
-        
 
     }
 
