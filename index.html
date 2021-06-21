@@ -18,8 +18,16 @@
 
         <div class="container" id="root">
 
-            <p>{{messaggio}}</p>
-    
+            <p :class="colore">{{messaggio}}</p>
+
+            <hr>
+            
+            <img :src="img" alt="qualsiasi">
+            
+            <div>
+                <button @click="eventoInatteso">Qualsiasi Cosa?</button>
+            </div>
+            
         </div>
 
 
