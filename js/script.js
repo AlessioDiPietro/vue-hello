@@ -14,10 +14,19 @@ const app = new Vue ({
     },
 
     methods : {
+        // eventoInatteso(){
+        //     this.colore = "blue";
+        //     this.img = "https://picsum.photos/600/315";
+        // }
         eventoInatteso(){
+
             this.colore = "blue";
             this.img = "https://picsum.photos/600/315";
+            while (!this.img === this.img) {
+                this.img = "https://picsum.photos/600/315";
+            }
         }
+
     }
 
 });
