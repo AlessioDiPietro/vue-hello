@@ -10,7 +10,11 @@ const app = new Vue ({
 
         img : "https://www.sinonimi-contrari.it/includes/images/sharers/sinonimi-di-qualsiasi.png",
 
-        colore: "red"
+        colore: "red",
+
+        img2 : "https://picsum.photos/600/315",
+
+        img3 : "https://picsum.photos/600/315"
     },
 
     methods : {
@@ -18,14 +22,16 @@ const app = new Vue ({
         //     this.colore = "blue";
         //     this.img = "https://picsum.photos/600/315";
         // }
-        eventoInatteso(){
 
+        eventoInatteso(){
             this.colore = "blue";
-            this.img = "https://picsum.photos/600/315";
-            while (!this.img === this.img) {
-                this.img = "https://picsum.photos/600/315";
-            }
+
+            this.img == "https://picsum.photos/600/315" ? this.img = "https://www.sinonimi-contrari.it/includes/images/sharers/sinonimi-di-qualsiasi.png" : (this.img == "https://www.sinonimi-contrari.it/includes/images/sharers/sinonimi-di-qualsiasi.png" ? this.img = "https://picsum.photos/600/315" : this.img = "https://picsum.photos/600/315");
+
+            
+
         }
+        
 
     }
 
